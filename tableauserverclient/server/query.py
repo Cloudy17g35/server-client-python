@@ -3,7 +3,9 @@ from .filter import Filter
 from .sort import Sort
 
 
-def to_camel_case(word):
+def to_camel_case(word:str) -> str:
+    '''this function takes string as argument and returns
+    word in camel case'''
     return word.split("_")[0] + "".join(x.capitalize() or "_" for x in word.split("_")[1:])
 
 
