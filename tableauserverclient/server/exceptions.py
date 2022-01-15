@@ -1,2 +1,1 @@
-class NotSignedInError(Exception):
-    pass
+
